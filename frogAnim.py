@@ -4,13 +4,13 @@ import matplotlib.animation as animation
 from frog import initialize, move
 
 # parameters
-xInit = [0, 500]
-yInit = [0, 1000]
+xInit = [0, 100000]
+yInit = [0, 50000]
 
-xBounds = [0, 1000]
-yBounds = [0, 1000]
-num_points = 1000
-radius = 25
+xBounds = [0, 100000]
+yBounds = [0, 100000]
+num_points = 500
+radius = 500
 num_frames = 100
 
 # initialize points
@@ -41,7 +41,7 @@ def update(frame):
 
 
 # create animation
-ani = animation.FuncAnimation(fig, update, frames=num_frames, interval=20, blit=True)
+ani = animation.FuncAnimation(fig, update, frames=num_frames, interval=10, blit=True)
 
 # show animation
 plt.show()
